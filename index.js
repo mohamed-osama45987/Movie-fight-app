@@ -59,7 +59,7 @@ let rightMovie;
 
 // 1.sending a search by selected movie id
 const onMovieSelect = async (movie, summaryRenderLocation, side) => {
-	const followUpResponse = await axios.get('http://www.omdbapi.com/', {
+	const followUpResponse = await axios.get('https://www.omdbapi.com/', {
 		params: {
 			apikey: 'aa9fc6b1',
 			i: movie.imdbID
